@@ -22,17 +22,24 @@ burgerHead.onclick = function () {
         headMenu.classList.add('expand')
     }
     else {
-        headMenu.classList.remove('expand')
+        headMenu.classList.remove('expand');
     }
 }
 $("#scroll").click(function () {
     $('html, body').animate({
-        scrollTop: $("#aim").offset().top
+        scrollTop: $("#link-one").offset().top
     }, 1500);
 });
-var scroll = document.querySelector('#scroll');
-var aim = document.querySelector('#aim');
-scroll.onclick = function(){
-    var aimTo = aim.scrollTop;
-    console.log(aimTo)
-}
+$("#scrll-contact").on('click', function () {
+    $('html,body').animate({
+        scrollTop: $('#link-five').offset().top
+    }, 1500)
+})
+$(".head-ul li").on('click', function () {
+    var data_id = $(this).data('scroll');
+    burgerHead.classList.remove('expand');
+    headMenu.classList.remove('expand');
+    $('html, body').animate({
+        scrollTop: $('#' + data_id).offset().top - 75
+    }, 1500);
+});

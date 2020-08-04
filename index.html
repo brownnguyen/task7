@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="#link">
+            <a href="index.html">
                 <img src="./images/img-logo.png" alt="">
             </a>
         </div>
@@ -24,20 +24,20 @@
             <span></span>
         </div>
         <div class="head-menu">
-            <ul>
-                <li><a href="#link">
+            <ul class="head-ul">
+                <li data-scroll="link-one"><a href="#link">
                         メッセージ
                     </a></li>
-                <li><a href="#link">
+                <li data-scroll="link-two"><a href="#link">
                         企業理念
                     </a></li>
-                <li><a href="#link">
+                <li data-scroll="link-three"><a href="#link">
                         事業内容
                     </a></li>
-                <li><a href="#link">
+                <li data-scroll="link-four"><a href="#link">
                         会社概要
                     </a></li>
-                <li class="head-contact">
+                <li data-scroll="link-five" class="head-contact">
                     <a href="#link">
                         CONTACT
                     </a>
@@ -46,9 +46,9 @@
         </div>
     </header>
     <div class="ct-scrl-top">
-        <a href="#link" class="contact">
+        <a href="#link" class="contact" id="scrll-contact">
             <div class="ct-content">
-                <img src="./images/icon-mesage.png" alt="">
+                <img src="./images/icon-mesage.png" alt="contact">
                 <p class="contact-text">
                     CONTACT
                 </p>
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <section class="aim" id="aim">
+        <section class="aim scroll-content" id="link-one">
             <div class="aim-content">
                 <div class="left">
                     <p class="text">リベロとはイタリア語で「自由」という意味です。</p>
@@ -109,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <section class="philosophy">
+        <section class="philosophy scroll-content" id="link-two">
             <div class="title">
                 <h2>
                     <span>PHILOSOPHY</span>
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work scroll-content" id="link-three">
             <div class="layer">
                 <img src="./images/bg-city.jpg" alt="">
             </div>
@@ -269,7 +269,7 @@
                 </div>
             </div>
         </section>
-        <section class="company">
+        <section class="company scroll-content" id="link-four">
             <h2 class="title">
                 <span>COMPANY</span>
                 会社概要
@@ -351,7 +351,7 @@
                 </ul>
             </div>
         </section>
-        <section class="mess-us">
+        <section class="mess-us scroll-content" id="link-five">
             <div class="mess-content">
                 <h2>
                     お問い合わせ
