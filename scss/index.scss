@@ -201,7 +201,7 @@
         flex-wrap: wrap;
         width: 90%;
         .left {
-            max-width: 520px;
+            max-width: 550px;
             width: 55%;
             .text {
                 line-height: 40px;
@@ -683,6 +683,43 @@
         padding-right: 20px;
     }
 }
+@media screen and (max-width: 992px) {
+    .header {
+        width: 100%;
+        .logo {
+            img {
+                width: 150px;
+            }
+        }
+        .head-menu {
+            ul {
+                li {
+                    margin-right: 5%;
+                }
+                .head-contact {
+                    display: flex;
+                }
+            }
+        }
+    }
+    .top-r {
+        width: 100%;
+    }
+    .ct-scrl-top {
+        display: none;
+    }
+    .philosophy {
+        .content {
+            ul {
+                li {
+                    .text {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 768px) {
     .header {
         width: 100%;
@@ -714,6 +751,7 @@
             height: 100vh;
         }
         .burger-head {
+            cursor: pointer;
             z-index: 1050;
             position: relative;
             width: 30px;
@@ -852,6 +890,9 @@
                         &:after {
                             height: 4px;
                         }
+                    }
+                    .title:first-of-type {
+                        text-indent: -10px;
                     }
                 }
             }
