@@ -348,7 +348,7 @@
             text-align: center;
             color: $black-1;
             font-size: 3.2rem;
-            padding: 0 10px;
+            padding: 0 22px;
             span {
                 display: block;
                 font-size: 1.6rem;
@@ -359,11 +359,11 @@
             &:after {
                 content: "";
                 display: block;
-                width: 120%;
+                width: 128%;
                 height: 20px;
                 background-color: $yellow;
                 margin-top: -23px;
-                margin-left: -10%;
+                margin-left: -14%;
             }
         }
     }
@@ -381,6 +381,7 @@
                     font-size: 4.5rem;
                     font-family: "Arvo", serif;
                     font-weight: normal;
+                    margin-bottom: 10px;
                 }
                 .first {
                     color: $ocean;
@@ -423,7 +424,7 @@
             text-align: center;
             color: $black-1;
             font-size: 3.2rem;
-            padding: 0 10px;
+            padding: 0 22px;
             span {
                 display: block;
                 font-size: 1.6rem;
@@ -434,11 +435,11 @@
             &:after {
                 content: "";
                 display: block;
-                width: 120%;
+                width: 128%;
                 height: 20px;
                 background-color: $yellow;
                 margin-top: -23px;
-                margin-left: -10%;
+                margin-left: -14%;
             }
         }
     }
@@ -580,6 +581,7 @@
     padding: 5% 0;
     background-color: $yellow;
     .title {
+        color: $black-1;
         text-align: center;
         font-size: 3rem;
         margin-bottom: 2.2%;
@@ -600,7 +602,7 @@
             li {
                 position: relative;
                 border-top: 1px solid $yellow-1;
-                padding: 20px 0;
+                padding: 14.5px 0;
                 display: flex;
                 justify-content: flex-start;
                 .left {
@@ -615,6 +617,7 @@
                     p {
                         font-size: 1.6rem;
                         margin-bottom: 2px;
+                        padding-left: 30px;
                     }
                 }
                 &::before {
@@ -682,6 +685,44 @@
     }
     .top-r .top-content .text-r-cont .text-r {
         margin-top: 25%;
+    }
+    .philosophy {
+        .title {
+            h2 {
+                span {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        // .content {
+        //     ul {
+        //         li {
+        //             .num {
+        //             }
+        //         }
+        //     }
+        // }
+    }
+    .company .title span {
+        margin-bottom: 7px;
+    }
+    .work {
+        .title {
+            h2 {
+                span {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .work-main {
+            .content {
+                .right {
+                    img {
+                        margin-top: -1px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 1024px) {
@@ -1030,6 +1071,11 @@
                     display: block;
                     &:before {
                         width: 90px;
+                    }
+                    .right {
+                        p {
+                            padding-left: 0;
+                        }
                     }
                 }
             }

@@ -245,7 +245,7 @@
       text-align: center;
       color: #333333;
       font-size: 3.2rem;
-      padding: 0 10px; }
+      padding: 0 22px; }
       .philosophy .title h2 span {
         display: block;
         font-size: 1.6rem;
@@ -255,11 +255,11 @@
       .philosophy .title h2:after {
         content: "";
         display: block;
-        width: 120%;
+        width: 128%;
         height: 20px;
         background-color: #ffee31;
         margin-top: -23px;
-        margin-left: -10%; }
+        margin-left: -14%; }
   .philosophy .content {
     margin-top: 3%; }
     .philosophy .content ul {
@@ -273,7 +273,8 @@
         .philosophy .content ul li .num {
           font-size: 4.5rem;
           font-family: "Arvo", serif;
-          font-weight: normal; }
+          font-weight: normal;
+          margin-bottom: 10px; }
         .philosophy .content ul li .first {
           color: #34a2ff; }
         .philosophy .content ul li .second {
@@ -305,7 +306,7 @@
       text-align: center;
       color: #333333;
       font-size: 3.2rem;
-      padding: 0 10px; }
+      padding: 0 22px; }
       .work .title h2 span {
         display: block;
         font-size: 1.6rem;
@@ -315,11 +316,11 @@
       .work .title h2:after {
         content: "";
         display: block;
-        width: 120%;
+        width: 128%;
         height: 20px;
         background-color: #ffee31;
         margin-top: -23px;
-        margin-left: -10%; }
+        margin-left: -14%; }
   .work .text {
     margin: auto;
     font-size: 1.8rem;
@@ -415,6 +416,7 @@
   padding: 5% 0;
   background-color: #ffee31; }
   .company .title {
+    color: #333333;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 2.2%; }
@@ -433,7 +435,7 @@
       .company .content ul li {
         position: relative;
         border-top: 1px solid #b2a622;
-        padding: 20px 0;
+        padding: 14.5px 0;
         display: flex;
         justify-content: flex-start; }
         .company .content ul li .left {
@@ -444,7 +446,8 @@
             color: #333333; }
         .company .content ul li .right p {
           font-size: 1.6rem;
-          margin-bottom: 2px; }
+          margin-bottom: 2px;
+          padding-left: 30px; }
         .company .content ul li::before {
           position: absolute;
           top: -1px;
@@ -498,7 +501,15 @@
   .mess-us .mess-content {
     transform: translateY(75%); }
   .top-r .top-content .text-r-cont .text-r {
-    margin-top: 25%; } }
+    margin-top: 25%; }
+  .philosophy .title h2 span {
+    margin-bottom: 5px; }
+  .company .title span {
+    margin-bottom: 7px; }
+  .work .title h2 span {
+    margin-bottom: 5px; }
+  .work .work-main .content .right img {
+    margin-top: -1px; } }
 
 @media screen and (max-width: 1024px) {
   .top-r .top-content .text-r-cont {
@@ -692,6 +703,8 @@
     display: block; }
     .company .content ul li:before {
       width: 90px; }
+    .company .content ul li .right p {
+      padding-left: 0; }
   .mess-us {
     min-height: unset;
     padding: 15% 0; }
