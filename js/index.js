@@ -25,11 +25,19 @@ burgerHead.onclick = function () {
         headMenu.classList.remove('expand');
     }
 }
+// var linkOne = document.querySelector('#link-one');
+// scroll.addEventListener('click', function () {
+//     var rect = linkOne.getBoundingClientRect().y;
+//     window.scrollBy(0, rect - 75);
+//     console.log(rect)
+// }
+// )
 $("#scroll").click(function () {
     $('html, body').animate({
-        scrollTop: $("#link-one").offset().top
+        scrollTop: $("#link-one").offset().top - 75
     }, 1500);
 });
+
 $("#scrll-contact").on('click', function () {
     $('html,body').animate({
         scrollTop: $('#link-five').offset().top

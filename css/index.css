@@ -47,7 +47,7 @@
   transition: all 0.5s ease; }
 
 .care-about {
-  width: 4650px;
+  width: 5000px;
   position: absolute;
   top: -87px;
   left: -160px;
@@ -57,7 +57,8 @@
   .care-about span.text {
     font-size: 40rem;
     color: #f5f5f5;
-    font-family: "Arvo", serif; }
+    font-family: "Arvo", serif;
+    letter-spacing: 12.5px; }
 
 .ct-scrl-top {
   position: absolute;
@@ -308,7 +309,7 @@
     padding-bottom: 12.5%; }
     .work .work-main .content {
       margin-top: -3px;
-      width: 85%;
+      width: 88.3%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap; }
@@ -471,8 +472,14 @@
     margin-top: 25%; } }
 
 @media screen and (max-width: 1024px) {
+  .top-r .top-content .text-r-cont {
+    min-height: 450px; }
+    .top-r .top-content .text-r-cont .text-r {
+      margin-right: 5%; }
   .top-r .img-r img {
-    max-width: 66%; }
+    max-width: 39%; }
+  .ct-scrl-top .scroll {
+    height: 469px; }
   .work {
     padding: 20px; }
     .work .layer {
