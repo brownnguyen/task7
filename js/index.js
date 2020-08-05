@@ -15,6 +15,14 @@ window.onscroll = function () {
         contactTop.style.height = "";
         header.style.height = "";
     }
+    if (window.pageYOffset > window.innerHeight / 2) {
+        document.querySelector('#backTop').style.opacity = 0.8;
+        document.querySelector('#backTop').style.visibility = "visible"
+    }
+    else {
+        document.querySelector('#backTop').style.opacity = 0;
+        document.querySelector('#backTop').style.visibility = "hidden"
+    }
 }
 burgerHead.onclick = function () {
     burgerHead.classList.toggle('expand');
@@ -50,4 +58,10 @@ $(".head-ul li").on('click', function () {
     $('html, body').animate({
         scrollTop: $('#' + data_id).offset().top - 75
     }, 1500);
+});
+$('#backTop').click(function (event) {
+    $('html,body').animate({
+        scrollTop: 0
+    }, 1000, 'swing');
+    return false;
 });
